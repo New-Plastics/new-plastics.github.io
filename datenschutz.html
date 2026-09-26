@@ -1,0 +1,241 @@
+<!doctype html>
+<!--
+  Datenschutzerklärung / Privacy policy for the app "Bloom Circuit" (Android).
+  Draft prepared from the app's actual data flows (2026-09-26). BEFORE PUBLISHING:
+  1. Replace every highlighted [PLACEHOLDER] (operator name, address, e-mail, age, authority).
+  2. Have the text checked (lawyer or a recognised privacy policy generator); this draft is not
+     legal advice.
+  3. Publish it at a public, permanent https URL (ideally your own website) and enter that URL in
+     AdMob (Privacy & messaging) and in the Google Play Console; the app links to it in Settings.
+  Keep it in sync with the app: see docs/legal/README.md.
+-->
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bloom Circuit – Datenschutzerklärung</title>
+<style>
+/* Bloom Circuit – website for the legal pages (docs/legal). One dark-green look for everyone. */
+:root {
+  --bg: #13281a;
+  --bg-top: #1b3a25;
+  --paper: #1f3d29;
+  --text: #eef5ea;
+  --soft: #bcd0b5;
+  --accent: #a8e08f;
+  --line: #2f5a3a;
+  --mark: #6b5a12;
+}
+* { box-sizing: border-box; }
+html { background: var(--bg); }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(180deg, var(--bg-top), var(--bg) 420px) no-repeat, var(--bg);
+  color: var(--text);
+  font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--accent); overflow-wrap: anywhere; }
+header.site { position: sticky; top: 0; z-index: 10; background: rgba(19, 40, 26, 0.94); border-bottom: 1px solid var(--line); }
+header.site .inner { max-width: 820px; margin: 0 auto; padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--text); text-decoration: none; font-weight: 800; font-size: 1.15rem; }
+.brand img { width: 40px; height: 40px; border-radius: 10px; }
+nav.menu { display: flex; gap: 4px; margin-left: auto; flex-wrap: wrap; }
+nav.menu a { color: var(--text); text-decoration: none; padding: 8px 14px; border-radius: 999px; }
+nav.menu a:hover, nav.menu a[aria-current="page"] { background: var(--line); }
+main { max-width: 820px; margin: 0 auto; padding: 24px 16px 48px; }
+article { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 22px 22px 10px; margin-bottom: 28px; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 6px; color: var(--accent); }
+h2 { font-size: 1.15rem; margin: 26px 0 8px; }
+h3 { font-size: 1rem; margin: 18px 0 6px; }
+.meta { color: var(--soft); margin: 0 0 16px; }
+.lang { display: flex; gap: 14px; margin: 0 0 18px; }
+.lead { font-size: 1.1rem; color: var(--text); }
+mark { background: var(--mark); color: inherit; padding: 0 3px; border-radius: 3px; }
+address { font-style: normal; }
+ul { padding-left: 1.2em; }
+footer.site { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var(--soft); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<header class="site">
+  <div class="inner">
+    <a class="brand" href="index.html"><img alt="" width="40" height="40" src="data:image/webp;base64,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">Bloom Circuit</a>
+    <nav class="menu" aria-label="Menü">
+      <a href="index.html">Start</a>
+      <a href="datenschutz.html" aria-current="page">Datenschutz</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <nav class="lang" aria-label="Sprache / Language"><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+
+  <article id="de" lang="de">
+    <h1>Datenschutzerklärung für die App „Bloom Circuit“</h1>
+    <p class="meta">Stand: 26. September 2026</p>
+
+    <h2>1. Wer ist verantwortlich?</h2>
+    <p>Verantwortlich für die Datenverarbeitung in der App „Bloom Circuit“ (Android, Paketname com.newplastics.bloomcircuit) ist:</p>
+    <address>
+      Marvin Jüssen<br>
+      New Plastics<br>
+      Quellenstraße 147<br>
+      53424 Remagen<br>
+      Deutschland<br>
+      E-Mail: <a class="mail" data-u="gamedev" data-d="newplastics.de">gamedev (at) newplastics.de</a>
+    </address>
+
+    <h2>2. Das Wichtigste in Kürze</h2>
+    <ul>
+      <li>Bloom Circuit funktioniert ohne Benutzerkonto und ohne Anmeldung.</li>
+      <li>Dein Spielstand und deine Einstellungen werden nur auf deinem Gerät gespeichert. Wir erhalten davon nichts.</li>
+      <li>Wir setzen keine eigenen Analyse- oder Tracking-Werkzeuge ein.</li>
+      <li>Die App ist kostenlos und wird durch Werbung von Google AdMob finanziert. Dabei verarbeitet Google personenbezogene Daten. Personalisierte Werbung gibt es nur mit deiner Einwilligung, die du jederzeit in der App ändern kannst.</li>
+    </ul>
+
+    <h2>3. Daten auf deinem Gerät</h2>
+    <p>Die App speichert lokal auf deinem Gerät: deinen Spielfortschritt (gelöste Level, Sterne, Blätter, Hinweisgutscheine, Gartenprojekte, Abzeichen), angefangene Level, deine Einstellungen (zum Beispiel Sprache, Ton, Vibration, Darstellung) sowie technische Einträge zu freiwillig angesehenen Werbevideos, damit eine Belohnung nur einmal gutgeschrieben wird.</p>
+    <p>Diese Daten verlassen dein Gerät nicht und werden nicht an uns übermittelt. Sie dienen allein dazu, dass das Spiel funktioniert und dein Fortschritt erhalten bleibt (Art. 6 Abs. 1 lit. b DSGVO; das Speichern auf deinem Gerät ist dafür unbedingt erforderlich, § 25 Abs. 2 Nr. 2 TDDDG).</p>
+    <p>Du kannst diese Daten jederzeit löschen: in der App unter Einstellungen → „Fortschritt löschen“ oder indem du die App deinstallierst.</p>
+    <p><strong>Spielstand exportieren:</strong> Nutzt du „Spielstand exportieren“, kopiert die App deinen Spielstand als Text in die Zwischenablage deines Geräts. Was du damit machst, zum Beispiel ihn in einer Notiz sichern, entscheidest du selbst. Wir erhalten dabei keine Daten.</p>
+
+    <h2>4. Werbung mit Google AdMob</h2>
+    <h3>a) Anbieter</h3>
+    <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).</p>
+    <h3>b) Wo Werbung erscheint</h3>
+    <p>Ein kleiner Banner am unteren Bildschirmrand, während du ein Rätsel bearbeitest, sowie Werbevideos mit Belohnung (zum Beispiel für Extrazüge oder einen Hinweis), die nur starten, wenn du sie ausdrücklich auswählst. In den ersten zehn Leveln, in Menüs, im Garten, auf der Levelkarte und in Ergebnisansichten zeigt die App keine Werbung.</p>
+    <h3>c) Welche Daten Google verarbeitet</h3>
+    <p>Nach Angaben von Google erhebt das Google-Mobile-Ads-SDK dabei automatisch insbesondere:</p>
+    <ul>
+      <li>die IP-Adresse deines Geräts, aus der sich der ungefähre Standort schätzen lässt,</li>
+      <li>Geräte- und Werbekennungen, insbesondere die Android-Werbe-ID und die App-Set-ID,</li>
+      <li>Interaktionen mit der App und der Werbung, zum Beispiel App-Starts, Anzeigenaufrufe, Klicks und angesehene Videos,</li>
+      <li>Diagnoseinformationen zur Leistung von App und SDK, zum Beispiel Startzeit, Hänger und Energieverbrauch,</li>
+      <li>allgemeine technische Angaben wie Gerätetyp, Betriebssystem und Spracheinstellung.</li>
+    </ul>
+    <p>Auf Android-Geräten mit der „Privacy Sandbox“ kann das SDK außerdem die Werbeschnittstellen von Android nutzen: grobe Interessenthemen, die Android auf deinem Gerät ermittelt („Werbethemen“), sowie die datensparsame Messung von Anzeigen. Diese Funktionen steuerst du in den Android-Einstellungen unter „Datenschutz → Werbedatenschutz“.</p>
+    <h3>d) Zwecke</h3>
+    <p>Auslieferung von Werbung, Begrenzung der Häufigkeit, Messung und Abrechnung von Anzeigen, Erkennung von Betrug und Missbrauch sowie, nur mit deiner Einwilligung, personalisierte Werbung auf Grundlage deiner Interessen.</p>
+    <h3>e) Einwilligung und Rechtsgrundlage</h3>
+    <p>Bevor die App Werbung lädt, fragt sie Nutzerinnen und Nutzer im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz über die Einwilligungslösung von Google (User Messaging Platform nach dem IAB Transparency &amp; Consent Framework) nach ihrer Einwilligung. Rechtsgrundlage für das Speichern und Auslesen von Informationen auf deinem Gerät und für personalisierte Werbung ist deine Einwilligung (§ 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO). Lehnst du ab, erhältst du keine personalisierte Werbung; je nach deiner Auswahl kann Google nicht personalisierte oder eingeschränkte Werbung ausliefern.</p>
+    <h3>f) Einwilligung ändern oder widerrufen</h3>
+    <p>Du kannst deine Einwilligung jederzeit mit Wirkung für die Zukunft ändern oder widerrufen: in der App unter Einstellungen → „Werbe-Einwilligung verwalten“. Die Werbe-ID deines Geräts kannst du in den Android-Einstellungen (je nach Gerät unter „Google → Werbung“ oder „Datenschutz → Werbung“) zurücksetzen oder löschen.</p>
+    <h3>g) Übermittlung in Drittländer</h3>
+    <p>Google verarbeitet Daten auch in den USA und in anderen Ländern außerhalb der EU. Google LLC ist nach dem EU-US Data Privacy Framework zertifiziert, für das die EU-Kommission am 10. Juli 2023 einen Angemessenheitsbeschluss erlassen hat. Ergänzend setzt Google Standardvertragsklauseln der EU-Kommission ein.</p>
+    <h3>h) Speicherdauer und weitere Informationen</h3>
+    <p>Wie lange Google Daten speichert, richtet sich nach den Richtlinien von Google. Mehr dazu: <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>, <a href="https://policies.google.com/technologies/partner-sites">wie Google Daten aus Apps von Partnern verwendet</a> und <a href="https://myadcenter.google.com">deine Werbeeinstellungen bei Google</a>.</p>
+    <p>Belohnungen aus Werbevideos werden ausschließlich lokal auf deinem Gerät gutgeschrieben.</p>
+
+    <h2>5. Download und Updates über Google Play</h2>
+    <p>Wenn du die App über Google Play herunterlädst, verarbeitet Google dabei Daten, zum Beispiel dein Google-Konto und Angaben zu deinem Gerät, in eigener Verantwortung; es gilt die Datenschutzerklärung von Google. Google stellt uns als Entwickler zusammengefasste Statistiken (zum Beispiel die Zahl der Installationen) sowie Absturz- und Stabilitätsberichte zur Verfügung, sofern du auf deinem Gerät der Weitergabe von Nutzungs- und Diagnosedaten zugestimmt hast. Wir nutzen diese Informationen nur, um Fehler zu beheben und die App zu verbessern (Art. 6 Abs. 1 lit. f DSGVO).</p>
+
+    <h2>6. Berechtigungen der App</h2>
+    <p>Die App nutzt nur den Internetzugriff und den Netzwerkstatus (zum Laden von Werbung), die Werbe-ID und die Werbeschnittstellen der Android-Privacy-Sandbox (für Werbung, siehe Abschnitt 4), das Wachhalten des Bildschirms (damit Werbevideos nicht unterbrochen werden), die Audioeinstellungen (für Musik und Geräusche) und die Vibration (für spürbare Rückmeldung, in den Einstellungen abschaltbar). Sie greift nicht auf deinen Standort (GPS), die Kamera, das Mikrofon, deine Kontakte oder deine Dateien zu.</p>
+
+    <h2>7. Kontakt</h2>
+    <p>Wenn du uns per E-Mail schreibst, verarbeiten wir deine E-Mail-Adresse und den Inhalt deiner Nachricht, um dein Anliegen zu beantworten (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Wir löschen diese Daten, sobald dein Anliegen erledigt ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
+
+    <h2>8. Kinder</h2>
+    <p>Bloom Circuit richtet sich an Personen ab 16 Jahren. Wenn du jünger bist, frag bitte deine Eltern, bevor du in personalisierte Werbung einwilligst.</p>
+
+    <h2>9. Deine Rechte</h2>
+    <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen, die auf berechtigten Interessen beruhen (Art. 21). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3). Da wir aus der App keine personenbezogenen Daten auf eigenen Servern speichern, richten sich Anfragen zu Werbedaten in erster Linie an Google; wir helfen dir gern dabei.</p>
+    <p>Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), zum Beispiel bei der für uns zuständigen Behörde: Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz, Hintere Bleiche 34, 55116 Mainz (<a href="https://www.datenschutz.rlp.de">www.datenschutz.rlp.de</a>).</p>
+
+    <h2>10. Keine automatisierten Entscheidungen</h2>
+    <p>Wir treffen keine automatisierten Entscheidungen, die dir gegenüber rechtliche Wirkung entfalten oder dich in ähnlicher Weise erheblich beeinträchtigen (Art. 22 DSGVO).</p>
+
+    <h2>11. Änderungen</h2>
+    <p>Wir passen diese Datenschutzerklärung an, wenn sich die App oder die Rechtslage ändert. Es gilt die jeweils hier veröffentlichte Fassung.</p>
+  </article>
+
+  <article id="en" lang="en">
+    <h1>Privacy policy for the app “Bloom Circuit”</h1>
+    <p class="meta">Last updated: 26 September 2026</p>
+
+    <h2>1. Who is responsible?</h2>
+    <p>The controller for the processing of data in the app “Bloom Circuit” (Android, package name com.newplastics.bloomcircuit) is:</p>
+    <address>
+      Marvin Jüssen<br>
+      New Plastics<br>
+      Quellenstraße 147<br>
+      53424 Remagen<br>
+      Germany<br>
+      Email: <a class="mail" data-u="gamedev" data-d="newplastics.de">gamedev (at) newplastics.de</a>
+    </address>
+
+    <h2>2. The short version</h2>
+    <ul>
+      <li>Bloom Circuit works without a user account and without signing in.</li>
+      <li>Your progress and settings are stored only on your device. We do not receive any of it.</li>
+      <li>We do not use any analytics or tracking tools of our own.</li>
+      <li>The app is free and financed by ads from Google AdMob, which means Google processes personal data. Personalised ads are only shown with your consent, which you can change in the app at any time.</li>
+    </ul>
+
+    <h2>3. Data on your device</h2>
+    <p>The app stores on your device: your progress (solved levels, stars, leaves, hint vouchers, garden projects, badges), levels in progress, your settings (for example language, sound, vibration, display) and technical records of voluntarily watched reward videos, so that a reward is only credited once.</p>
+    <p>This data does not leave your device and is not sent to us. It is used solely so that the game works and your progress is kept (Art. 6(1)(b) GDPR; storing it on your device is strictly necessary for this, § 25(2) no. 2 TDDDG).</p>
+    <p>You can delete this data at any time: in the app under Settings → “Delete progress”, or by uninstalling the app.</p>
+    <p><strong>Exporting your progress:</strong> If you use “Export progress”, the app copies your progress as text to your device’s clipboard. What you do with it, for example saving it in a note, is up to you. We do not receive any data.</p>
+
+    <h2>4. Advertising with Google AdMob</h2>
+    <h3>a) Provider</h3>
+    <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (“Google”).</p>
+    <h3>b) Where ads appear</h3>
+    <p>A small banner at the bottom of the screen while you are working on a puzzle, and reward videos (for example for extra moves or a hint) that only start when you explicitly choose them. The app shows no ads in the first ten levels, in menus, in the garden, on the level map or on result screens.</p>
+    <h3>c) Data processed by Google</h3>
+    <p>According to Google, the Google Mobile Ads SDK automatically collects in particular:</p>
+    <ul>
+      <li>your device’s IP address, which can be used to estimate its approximate location,</li>
+      <li>device and advertising identifiers, in particular the Android advertising ID and the app set ID,</li>
+      <li>interactions with the app and the ads, for example app launches, ad impressions, taps and watched videos,</li>
+      <li>diagnostic information about the performance of the app and the SDK, for example launch time, hangs and energy use,</li>
+      <li>general technical details such as device type, operating system and language setting.</li>
+    </ul>
+    <p>On Android devices with the “Privacy Sandbox”, the SDK may also use Android’s advertising interfaces: broad interest topics that Android determines on your device (“ad topics”) and privacy-preserving ad measurement. You control these features in the Android settings under “Privacy → Ads privacy”.</p>
+    <h3>d) Purposes</h3>
+    <p>Delivering ads, limiting how often they are shown, measuring and billing ads, detecting fraud and abuse and, only with your consent, personalised advertising based on your interests.</p>
+    <h3>e) Consent and legal basis</h3>
+    <p>Before the app loads any ads, it asks users in the European Economic Area, the United Kingdom and Switzerland for their consent through Google’s consent solution (User Messaging Platform, based on the IAB Transparency &amp; Consent Framework). The legal basis for storing and accessing information on your device and for personalised advertising is your consent (§ 25(1) TDDDG, Art. 6(1)(a) GDPR). If you decline, you will not receive personalised ads; depending on your choices, Google may deliver non-personalised or limited ads.</p>
+    <h3>f) Changing or withdrawing consent</h3>
+    <p>You can change or withdraw your consent at any time with effect for the future: in the app under Settings → “Manage ad consent”. You can reset or delete your device’s advertising ID in the Android settings (depending on the device under “Google → Ads” or “Privacy → Ads”).</p>
+    <h3>g) Transfers to third countries</h3>
+    <p>Google also processes data in the USA and other countries outside the EU. Google LLC is certified under the EU-US Data Privacy Framework, for which the European Commission adopted an adequacy decision on 10 July 2023. In addition, Google uses the European Commission’s standard contractual clauses.</p>
+    <h3>h) Retention and further information</h3>
+    <p>How long Google stores data is governed by Google’s policies. More information: <a href="https://policies.google.com/privacy">Google’s privacy policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partners’ apps</a> and <a href="https://myadcenter.google.com">your ad settings at Google</a>.</p>
+    <p>Rewards from ad videos are credited only locally on your device.</p>
+
+    <h2>5. Download and updates via Google Play</h2>
+    <p>When you download the app from Google Play, Google processes data such as your Google account and details about your device under its own responsibility; Google’s privacy policy applies. Google provides us as the developer with aggregated statistics (for example the number of installs) as well as crash and stability reports, if you have agreed on your device to share usage and diagnostics data. We use this information only to fix errors and improve the app (Art. 6(1)(f) GDPR).</p>
+
+    <h2>6. App permissions</h2>
+    <p>The app only uses internet access and the network state (to load ads), the advertising ID and the advertising interfaces of the Android Privacy Sandbox (for ads, see section 4), keeping the screen awake (so that ad videos are not interrupted), the audio settings (for music and sound effects) and vibration (for haptic feedback, which you can switch off in the settings). It does not access your location (GPS), camera, microphone, contacts or files.</p>
+
+    <h2>7. Contact</h2>
+    <p>If you email us, we process your email address and the content of your message to answer your request (Art. 6(1)(b) or (f) GDPR). We delete this data once your request has been dealt with, unless statutory retention obligations apply.</p>
+
+    <h2>8. Children</h2>
+    <p>Bloom Circuit is intended for people aged 16 and over. If you are younger, please ask your parents before you consent to personalised ads.</p>
+
+    <h2>9. Your rights</h2>
+    <p>You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object to processing based on legitimate interests (Art. 21). You can withdraw consent at any time with effect for the future (Art. 7(3)). Since we do not store personal data from the app on servers of our own, requests about advertising data are mainly directed to Google; we are happy to help you with them.</p>
+    <p>You also have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR), for example the authority responsible for us: the State Commissioner for Data Protection and Freedom of Information of Rhineland-Palatinate (Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz), Hintere Bleiche 34, 55116 Mainz, Germany (<a href="https://www.datenschutz.rlp.de">www.datenschutz.rlp.de</a>).</p>
+
+    <h2>10. No automated decisions</h2>
+    <p>We do not make automated decisions that produce legal effects concerning you or similarly significantly affect you (Art. 22 GDPR).</p>
+
+    <h2>11. Changes</h2>
+    <p>We update this privacy policy when the app or the legal situation changes. The version published here applies.</p>
+  </article>
+</main>
+<footer class="site">© 2026 Marvin Jüssen, New Plastics · <a href="datenschutz.html">Datenschutz</a> · <a href="impressum.html">Impressum</a></footer>
+<script>
+document.querySelectorAll('a.mail').forEach(function (a) {
+  var m = a.getAttribute('data-u') + '@' + a.getAttribute('data-d');
+  a.href = 'mailto:' + m;
+  a.textContent = m;
+});
+</script>
+</body>
+</html>
