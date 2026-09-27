@@ -1,12 +1,11 @@
 <!doctype html>
 <!--
   Datenschutzerklärung / Privacy policy for the app "Bloom Circuit" (Android).
-  Draft prepared from the app's actual data flows (2026-09-26). BEFORE PUBLISHING:
-  1. Replace every highlighted [PLACEHOLDER] (operator name, address, e-mail, age, authority).
-  2. Have the text checked (lawyer or a recognised privacy policy generator); this draft is not
-     legal advice.
-  3. Publish it at a public, permanent https URL (ideally your own website) and enter that URL in
-     AdMob (Privacy & messaging) and in the Google Play Console; the app links to it in Settings.
+  Prepared from the app's actual data flows (2026-09-26); updated 2026-09-27: current game
+  (Werkstatt), in-app purchases (Google Play Billing), local notifications, Android backup; then the
+  notification permission at the first start and the well ("Brunnen") wording (D-040 amendment).
+  Not legal advice: have changes checked before publishing. It is published at
+  https://new-plastics.github.io/datenschutz.html (the URL in AdMob, the Play Console and the app).
   Keep it in sync with the app: see docs/legal/README.md.
 -->
 <html lang="de">
@@ -73,7 +72,7 @@ footer.site { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var
 
   <article id="de" lang="de">
     <h1>Datenschutzerklärung für die App „Bloom Circuit“</h1>
-    <p class="meta">Stand: 26. September 2026</p>
+    <p class="meta">Stand: 27. September 2026</p>
 
     <h2>1. Wer ist verantwortlich?</h2>
     <p>Verantwortlich für die Datenverarbeitung in der App „Bloom Circuit“ (Android, Paketname com.newplastics.bloomcircuit) ist:</p>
@@ -88,23 +87,27 @@ footer.site { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var
 
     <h2>2. Das Wichtigste in Kürze</h2>
     <ul>
-      <li>Bloom Circuit funktioniert ohne Benutzerkonto und ohne Anmeldung.</li>
-      <li>Dein Spielstand und deine Einstellungen werden nur auf deinem Gerät gespeichert. Wir erhalten davon nichts.</li>
+      <li>Bloom Circuit funktioniert ohne Benutzerkonto und ohne Anmeldung. Die Anmeldung bei Google Play Spiele für Erfolge ist freiwillig (Abschnitt 6a).</li>
+      <li>Dein Spielstand und deine Einstellungen werden auf deinem Gerät gespeichert. Wir erhalten davon nichts.</li>
       <li>Wir setzen keine eigenen Analyse- oder Tracking-Werkzeuge ein.</li>
       <li>Die App ist kostenlos und wird durch Werbung von Google AdMob finanziert. Dabei verarbeitet Google personenbezogene Daten. Personalisierte Werbung gibt es nur mit deiner Einwilligung, die du jederzeit in der App ändern kannst.</li>
+      <li>Freiwillig kannst du in der App Blätterpakete und das Entfernen des Werbebanners kaufen. Die Zahlung wickelt Google Play ab; Zahlungsdaten erhalten wir nicht.</li>
+      <li>Ob die App Benachrichtigungen zeigen darf, fragt Android beim ersten Start einmal; in den Einstellungen kannst du sie jederzeit ein- und ausschalten. Die App plant sie auf deinem Gerät; dafür werden keine Daten übertragen.</li>
+      <li>Bist du bei Google Play Spiele angemeldet, meldet die App deine im Spiel erreichten Erfolge an Google. In den Einstellungen kannst du das abschalten.</li>
     </ul>
 
     <h2>3. Daten auf deinem Gerät</h2>
-    <p>Die App speichert lokal auf deinem Gerät: deinen Spielfortschritt (gelöste Level, Sterne, Blätter, Hinweisgutscheine, Gartenprojekte, Abzeichen), angefangene Level, deine Einstellungen (zum Beispiel Sprache, Ton, Vibration, Darstellung) sowie technische Einträge zu freiwillig angesehenen Werbevideos, damit eine Belohnung nur einmal gutgeschrieben wird.</p>
-    <p>Diese Daten verlassen dein Gerät nicht und werden nicht an uns übermittelt. Sie dienen allein dazu, dass das Spiel funktioniert und dein Fortschritt erhalten bleibt (Art. 6 Abs. 1 lit. b DSGVO; das Speichern auf deinem Gerät ist dafür unbedingt erforderlich, § 25 Abs. 2 Nr. 2 TDDDG).</p>
-    <p>Du kannst diese Daten jederzeit löschen: in der App unter Einstellungen → „Fortschritt löschen“ oder indem du die App deinstallierst.</p>
-    <p><strong>Spielstand exportieren:</strong> Nutzt du „Spielstand exportieren“, kopiert die App deinen Spielstand als Text in die Zwischenablage deines Geräts. Was du damit machst, zum Beispiel ihn in einer Notiz sichern, entscheidest du selbst. Wir erhalten dabei keine Daten.</p>
+    <p>Die App speichert lokal auf deinem Gerät: deinen Spielfortschritt (zum Beispiel gelöste und übersprungene Level, Sterne, Blätter, das Wasser in deinem Brunnen, Verbesserungen aus der Werkstatt, Abzeichen), angefangene Level, deine Einstellungen (zum Beispiel Sprache, Musik und Geräusche, Vibration, Darstellung), technische Einträge zu freiwillig angesehenen Werbevideos, damit eine Belohnung nur einmal gutgeschrieben wird und die Obergrenzen für Werbevideos eingehalten werden, Einträge zu deinen Käufen in der App (siehe Abschnitt 5), deine Auswahl zu Benachrichtigungen (siehe Abschnitt 6) sowie deine Auswahl und die gemeldeten Erfolge zu Google Play Spiele (siehe Abschnitt 6a).</p>
+    <p>Diese Daten werden nicht an uns übermittelt. Sie dienen allein dazu, dass das Spiel funktioniert und dein Fortschritt erhalten bleibt (Art. 6 Abs. 1 lit. b DSGVO; das Speichern auf deinem Gerät ist dafür unbedingt erforderlich, § 25 Abs. 2 Nr. 2 TDDDG).</p>
+    <p>Hast du in den Android-Einstellungen die Datensicherung durch Google eingeschaltet, kann Android die Daten der App in deinem Google-Konto sichern und sie nach einer Neuinstallation oder auf einem neuen Gerät wiederherstellen. Diese Sicherung ist eine Funktion von Android und Google; wir haben darauf keinen Zugriff. Du steuerst sie in den Android-Einstellungen.</p>
+    <p>Du kannst diese Daten jederzeit löschen, indem du die App deinstallierst oder in den Android-Einstellungen ihren Speicher löschst. In der App löschst du mit Einstellungen → „Fortschritt löschen“ deinen Spielfortschritt und angefangene Level; deine Einstellungen, die Einträge zu deinen Käufen (siehe Abschnitt 5), deine Auswahl zu Benachrichtigungen (siehe Abschnitt 6) und die Angaben zu Google Play Spiele (siehe Abschnitt 6a) bleiben dabei erhalten.</p>
+    <p><strong>Spielstand exportieren:</strong> Nutzt du „Spielstand exportieren“, kopiert die App deinen Spielstand als Text in die Zwischenablage deines Geräts. Was du damit machst, zum Beispiel ihn in einer Notiz sichern, entscheidest du selbst. Wir erhalten dabei keine Daten. Die Einträge zu deinen Käufen, deine Auswahl zu Benachrichtigungen und die Angaben zu Google Play Spiele sind im exportierten Spielstand nicht enthalten.</p>
 
     <h2>4. Werbung mit Google AdMob</h2>
     <h3>a) Anbieter</h3>
     <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland („Google“).</p>
     <h3>b) Wo Werbung erscheint</h3>
-    <p>Ein kleiner Banner am unteren Bildschirmrand, während du ein Rätsel bearbeitest, sowie Werbevideos mit Belohnung (zum Beispiel für Extrazüge oder einen Hinweis), die nur starten, wenn du sie ausdrücklich auswählst. In den ersten zehn Leveln, in Menüs, im Garten, auf der Levelkarte und in Ergebnisansichten zeigt die App keine Werbung.</p>
+    <p>Ein kleiner Banner am unteren Bildschirmrand, während du ein Rätsel bearbeitest, sowie Werbevideos mit Belohnung, die nur starten, wenn du sie ausdrücklich auswählst: in einem laufenden Rätsel (zum Beispiel für einen Hinweis, zusätzliche Züge oder Wasser für deinen Brunnen) und nach einem gelösten Level, um die gewonnenen Blätter zu verdoppeln. In der Einführung, in den ersten zehn Leveln, in Übungsrätseln, in Menüs, in der Werkstatt und auf der Levelkarte zeigt die App keine Werbung. Hast du „Werbebanner entfernen“ gekauft (siehe Abschnitt 5), erscheint kein Banner mehr; die freiwilligen Werbevideos bleiben verfügbar.</p>
     <h3>c) Welche Daten Google verarbeitet</h3>
     <p>Nach Angaben von Google erhebt das Google-Mobile-Ads-SDK dabei automatisch insbesondere:</p>
     <ul>
@@ -127,37 +130,57 @@ footer.site { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var
     <p>Wie lange Google Daten speichert, richtet sich nach den Richtlinien von Google. Mehr dazu: <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a>, <a href="https://policies.google.com/technologies/partner-sites">wie Google Daten aus Apps von Partnern verwendet</a> und <a href="https://myadcenter.google.com">deine Werbeeinstellungen bei Google</a>.</p>
     <p>Belohnungen aus Werbevideos werden ausschließlich lokal auf deinem Gerät gutgeschrieben.</p>
 
-    <h2>5. Download und Updates über Google Play</h2>
+    <h2>5. Käufe in der App (Google Play Billing)</h2>
+    <h3>a) Was du kaufen kannst und wer den Kauf abwickelt</h3>
+    <p>In der App kannst du freiwillig Blätterpakete (Blätter sind die Spielwährung, zum Beispiel für Hinweise und die Werkstatt) und das einmalige Entfernen des Werbebanners kaufen. Kein Level setzt einen Kauf voraus. Den Kauf und die Zahlung wickelt Google über Google Play ab. Dabei verarbeitet Google in eigener Verantwortung insbesondere dein Google-Konto, dein Zahlungsmittel, Rechnungsdaten sowie Angaben zum Kauf (Produkt, Preis, Zeitpunkt, Land); verantwortlich ist im Europäischen Wirtschaftsraum Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Es gelten die <a href="https://play.google.com/about/play-terms/index.html">Nutzungsbedingungen von Google Play</a>, die <a href="https://policies.google.com/privacy">Datenschutzerklärung von Google</a> und die <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;ldl=de">Datenschutzhinweise für Google Payments</a>.</p>
+    <h3>b) Was wir erhalten</h3>
+    <p>Wir erhalten keine Zahlungsdaten: keine Karten- oder Kontonummer und keine Anschrift. In der Google Play Console sehen wir zu jeder Bestellung die Bestellnummer, Datum, Produkt, Preis, Steuern, das Gerätemodell sowie das Land und in manchen Fällen auch Region, Postleitzahl oder Stadt. Eine Bestellung können wir dort anhand ihrer Bestellnummer oder deiner vollständigen E-Mail-Adresse finden, etwa wenn du uns wegen eines Kaufs schreibst. Wir nutzen diese Angaben, um Käufe abzurechnen, Erstattungen zu bearbeiten, Steuerpflichten zu erfüllen, dir bei Fragen zu helfen und Missbrauch zu erkennen (Art. 6 Abs. 1 lit. b, c und f DSGVO). Abrechnungsunterlagen, die wir für unsere Buchhaltung aus der Play Console übernehmen, bewahren wir so lange auf, wie es handels- und steuerrechtlich vorgeschrieben ist (bis zu zehn Jahre, § 147 AO, § 257 HGB).</p>
+    <h3>c) Was die App auf deinem Gerät speichert</h3>
+    <p>Google Play teilt der App mit, welches Produkt du gekauft hast, ob die Zahlung abgeschlossen ist, und eine Kauf-Kennung. Daraus speichert die App lokal einen Eintrag je Kauf: Produkt, Status, Zeitpunkte, bei Blätterpaketen die gutgeschriebenen Blätter und einen Fingerabdruck (Hashwert) der Kauf-Kennung, nicht die Kennung selbst. So wird jeder Kauf genau einmal gutgeschrieben, auch wenn Google Play ihn mehrfach meldet. Nach der Gutschrift bestätigt die App den Kauf gegenüber Google Play; Blätterpakete meldet sie dabei als verbraucht, damit du sie erneut kaufen kannst. Beim Start der App, bei der Rückkehr in die App und über „Käufe wiederherstellen“ fragt die App bei Google Play ab, welche Käufe zu deinem Google-Konto gehören; so kommt zum Beispiel die Werbefreiheit nach einer Neuinstallation zurück, und eine erstattete Werbefreiheit endet. Die aktuellen Preise ruft die App ebenfalls bei Google Play ab. Die Einträge schickt die App an niemanden, auch nicht an uns: Wir betreiben keine eigenen Server und erhalten aus der App keine Kaufdaten. Rechtsgrundlage ist, dass wir dir das Gekaufte in der App bereitstellen (Art. 6 Abs. 1 lit. b DSGVO); das Speichern auf deinem Gerät ist dafür unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Beim Exportieren des Spielstands werden die Einträge nicht mit exportiert.</p>
+    <h3>d) Übermittlung in Drittländer</h3>
+    <p>Google verarbeitet Daten auch in den USA; dafür gilt das in Abschnitt 4 g) Gesagte (EU-US Data Privacy Framework, Standardvertragsklauseln).</p>
+
+    <h2>6. Benachrichtigungen</h2>
+    <p>Die App kann dir mit Benachrichtigungen Bescheid sagen, zum Beispiel wenn dein Brunnen wieder Wasser hat, und erinnert dich gelegentlich an ein wartendes Level oder das Tagesrätsel – höchstens zweimal am Tag und nie zwischen 21 und 9 Uhr. Wenn du die App zum ersten Mal öffnest, fragt Android (ab Android 13) einmal nach deiner Erlaubnis, Benachrichtigungen anzuzeigen: Erlaubst du es, sind sie eingeschaltet; lehnst du ab, bleiben sie aus, und die App fragt nicht noch einmal von selbst. Auf älteren Android-Versionen, die nicht fragen, sind sie von Anfang an eingeschaltet. Ein- und ausschalten kannst du sie jederzeit in der App unter Einstellungen → „Benachrichtigungen“ – beim Ausschalten löscht die App alle geplanten Benachrichtigungen – oder in den Android-Einstellungen der App.</p>
+    <p>Es sind lokale Benachrichtigungen: Die App plant sie selbst auf deinem Gerät, wenn du sie verlässt, und Android zeigt sie zur geplanten Zeit an; öffnest du die App wieder, löscht sie die noch geplanten. Es gibt dafür keinen Push-Dienst und keinen Server, die App erzeugt keine Push-Kennung (Token), und es werden keine Daten an uns oder an Dritte übertragen. Auf deinem Gerät speichert die App deine Auswahl (an oder aus, ob Android dich schon gefragt hat und wann du entschieden hast) sowie Art und Zeitpunkt geplanter und bereits fälliger Benachrichtigungen, damit sie nicht zu oft erscheinen. Diese Angaben bleiben beim „Fortschritt löschen“ erhalten und sind im exportierten Spielstand nicht enthalten; beim Deinstallieren werden sie gelöscht. Rechtsgrundlage ist die Bereitstellung dieser Funktion der App, die du jederzeit ausschalten kannst (Art. 6 Abs. 1 lit. b DSGVO); das Speichern auf deinem Gerät ist dafür unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG).</p>
+
+    <h2>6a. Erfolge mit Google Play Spiele</h2>
+    <p>Die App kann deine im Spiel erreichten Erfolge an Google Play Spiele melden, den Spieledienst von Google (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland). Das geschieht nur, solange du bei Google Play Spiele angemeldet bist und in den Einstellungen „Erfolge mit Google Play teilen“ eingeschaltet ist. Hast du ein Profil bei Google Play Spiele, meldet Google dich beim Start der App selbst an; ohne Profil fragt die App nicht von sich aus – anmelden kannst du dich auf dem Ziele-Bildschirm über „Google Play Erfolge“.</p>
+    <p>Gemeldet wird, welche Erfolge du erreicht hast, und bei Erfolgen mit Fortschritt der Zwischenstand (zum Beispiel „37 von 50 Leveln gelöst“). Google verknüpft das mit deinem Spielerprofil (Spielername, Avatar, Spieler-ID) und verarbeitet dabei auch technische Angaben wie die IP-Adresse sowie Geräte- und Diagnosedaten, in eigener Verantwortung nach der Datenschutzerklärung von Google (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Wer deine Erfolge sehen kann, legst du in deinem Profil bei Google Play Spiele fest. Wir erhalten diese Daten nicht.</p>
+    <p>Auf deinem Gerät speichert die App deine Auswahl, welche Erfolge Google schon bestätigt hat, und eine Prüfsumme deiner Spieler-ID (nicht die ID selbst): So sendet sie nichts doppelt, holt offline Verpasstes beim nächsten Start nach und erkennt, wenn ein anderes Konto angemeldet ist. Diese Angaben bleiben beim „Fortschritt löschen“ erhalten und sind im exportierten Spielstand nicht enthalten; beim Deinstallieren werden sie gelöscht.</p>
+    <p>Schaltest du „Erfolge mit Google Play teilen“ aus, sendet die App nichts mehr und startet Google Play Spiele ab dem nächsten App-Start nicht mehr. Dein Profil und die dort gespeicherten Erfolge verwaltest und löschst du bei Google, in den Einstellungen von Google Play Spiele auf deinem Gerät oder unter <a href="https://myaccount.google.com">myaccount.google.com</a>. Rechtsgrundlage ist die Bereitstellung dieser freiwilligen Funktion (Art. 6 Abs. 1 lit. b DSGVO); das Speichern auf deinem Gerät ist dafür unbedingt erforderlich (§ 25 Abs. 2 Nr. 2 TDDDG). Zur Übermittlung in Drittländer gilt das in Abschnitt 4 g) Gesagte.</p>
+
+    <h2>7. Download und Updates über Google Play</h2>
     <p>Wenn du die App über Google Play herunterlädst, verarbeitet Google dabei Daten, zum Beispiel dein Google-Konto und Angaben zu deinem Gerät, in eigener Verantwortung; es gilt die Datenschutzerklärung von Google. Google stellt uns als Entwickler zusammengefasste Statistiken (zum Beispiel die Zahl der Installationen) sowie Absturz- und Stabilitätsberichte zur Verfügung, sofern du auf deinem Gerät der Weitergabe von Nutzungs- und Diagnosedaten zugestimmt hast. Wir nutzen diese Informationen nur, um Fehler zu beheben und die App zu verbessern (Art. 6 Abs. 1 lit. f DSGVO).</p>
 
-    <h2>6. Berechtigungen der App</h2>
-    <p>Die App nutzt nur den Internetzugriff und den Netzwerkstatus (zum Laden von Werbung), die Werbe-ID und die Werbeschnittstellen der Android-Privacy-Sandbox (für Werbung, siehe Abschnitt 4), das Wachhalten des Bildschirms (damit Werbevideos nicht unterbrochen werden), die Audioeinstellungen (für Musik und Geräusche) und die Vibration (für spürbare Rückmeldung, in den Einstellungen abschaltbar). Sie greift nicht auf deinen Standort (GPS), die Kamera, das Mikrofon, deine Kontakte oder deine Dateien zu.</p>
+    <h2>8. Berechtigungen der App</h2>
+    <p>Die App nutzt nur den Internetzugriff und den Netzwerkstatus (zum Laden von Werbung), die Werbe-ID und die Werbeschnittstellen der Android-Privacy-Sandbox (für Werbung, siehe Abschnitt 4), die Kauf-Berechtigung von Google Play (für Käufe in der App, siehe Abschnitt 5), die Berechtigung, Benachrichtigungen anzuzeigen, und die Meldung über einen Neustart des Geräts, damit geplante Benachrichtigungen danach erhalten bleiben (für Benachrichtigungen, siehe Abschnitt 6; ab Android 13 fragt Android beim ersten Start der App einmal nach der Erlaubnis zum Anzeigen), das Wachhalten des Bildschirms (damit Werbevideos nicht unterbrochen werden), die Audioeinstellungen (für Musik und Geräusche) und die Vibration (für spürbare Rückmeldung, in den Einstellungen abschaltbar). Sie greift nicht auf deinen Standort (GPS), die Kamera, das Mikrofon, deine Kontakte oder deine Dateien zu.</p>
 
-    <h2>7. Diese Website</h2>
+    <h2>9. Diese Website</h2>
     <p>Diese Website wird über GitHub Pages bereitgestellt, einen Dienst von GitHub (GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, Niederlande, und GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA). Wenn du die Seiten aufrufst, verarbeitet GitHub technisch notwendige Daten, insbesondere deine IP-Adresse, Datum und Uhrzeit des Abrufs sowie Angaben zu deinem Browser, um die Seiten auszuliefern und den Dienst zu schützen (Art. 6 Abs. 1 lit. f DSGVO; unser berechtigtes Interesse ist eine sichere und zuverlässige Bereitstellung). Dabei können Daten in die USA übermittelt werden; GitHub ist nach dem EU-US Data Privacy Framework zertifiziert. Mehr dazu in der <a href="https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement">Datenschutzerklärung von GitHub</a>.</p>
     <p>Die Website setzt keine Cookies, lädt keine Schriften oder Skripte von fremden Servern und nutzt keine Analyse- oder Werbedienste.</p>
 
-    <h2>8. Kontakt</h2>
+    <h2>10. Kontakt</h2>
     <p>Wenn du uns per E-Mail oder über unser Kontaktformular schreibst, verarbeiten wir deine Angaben (Name, E-Mail-Adresse und Nachricht), um dein Anliegen zu beantworten (Art. 6 Abs. 1 lit. b bzw. lit. f DSGVO). Wir löschen diese Daten, sobald dein Anliegen erledigt ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>
     <p>Das <a href="https://tally.so/r/PdKWxe">Kontaktformular</a> stellt Tally bereit (Tally BV, Sint-Pietersnieuwstraat 11, 9000 Gent, Belgien). Tally verarbeitet die Angaben in unserem Auftrag auf Servern in der EU; mit Tally besteht ein Vertrag zur Auftragsverarbeitung (Art. 28 DSGVO). Das Formular öffnet sich auf der Seite von Tally, ergänzend gilt die <a href="https://tally.so/help/privacy-policy">Datenschutzerklärung von Tally</a>.</p>
 
-    <h2>9. Kinder</h2>
-    <p>Bloom Circuit richtet sich an Personen ab 16 Jahren. Wenn du jünger bist, frag bitte deine Eltern, bevor du in personalisierte Werbung einwilligst.</p>
+    <h2>11. Kinder</h2>
+    <p>Bloom Circuit richtet sich an Personen ab 16 Jahren. Wenn du jünger bist, frag bitte deine Eltern, bevor du in personalisierte Werbung einwilligst oder in der App etwas kaufst.</p>
 
-    <h2>10. Deine Rechte</h2>
-    <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen, die auf berechtigten Interessen beruhen (Art. 21). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3). Da wir aus der App keine personenbezogenen Daten auf eigenen Servern speichern, richten sich Anfragen zu Werbedaten in erster Linie an Google; wir helfen dir gern dabei.</p>
+    <h2>12. Deine Rechte</h2>
+    <p>Du hast das Recht auf Auskunft (Art. 15 DSGVO), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen, die auf berechtigten Interessen beruhen (Art. 21). Eine Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3). Da wir aus der App keine personenbezogenen Daten auf eigenen Servern speichern, richten sich Anfragen zu Werbe-, Zahlungs- und Spieledaten (Google Play Spiele) in erster Linie an Google; wir helfen dir gern dabei.</p>
     <p>Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren (Art. 77 DSGVO), zum Beispiel bei der für uns zuständigen Behörde: Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz, Hintere Bleiche 34, 55116 Mainz (<a href="https://www.datenschutz.rlp.de">www.datenschutz.rlp.de</a>).</p>
 
-    <h2>11. Keine automatisierten Entscheidungen</h2>
+    <h2>13. Keine automatisierten Entscheidungen</h2>
     <p>Wir treffen keine automatisierten Entscheidungen, die dir gegenüber rechtliche Wirkung entfalten oder dich in ähnlicher Weise erheblich beeinträchtigen (Art. 22 DSGVO).</p>
 
-    <h2>12. Änderungen</h2>
+    <h2>14. Änderungen</h2>
     <p>Wir passen diese Datenschutzerklärung an, wenn sich die App oder die Rechtslage ändert. Es gilt die jeweils hier veröffentlichte Fassung.</p>
   </article>
 
   <article id="en" lang="en">
     <h1>Privacy policy for the app “Bloom Circuit”</h1>
-    <p class="meta">Last updated: 26 September 2026</p>
+    <p class="meta">Last updated: 27 September 2026</p>
 
     <h2>1. Who is responsible?</h2>
     <p>The controller for the processing of data in the app “Bloom Circuit” (Android, package name com.newplastics.bloomcircuit) is:</p>
@@ -172,23 +195,27 @@ footer.site { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var
 
     <h2>2. The short version</h2>
     <ul>
-      <li>Bloom Circuit works without a user account and without signing in.</li>
-      <li>Your progress and settings are stored only on your device. We do not receive any of it.</li>
+      <li>Bloom Circuit works without a user account and without signing in. Signing in to Google Play Games for achievements is voluntary (section 6a).</li>
+      <li>Your progress and settings are stored on your device. We do not receive any of it.</li>
       <li>We do not use any analytics or tracking tools of our own.</li>
       <li>The app is free and financed by ads from Google AdMob, which means Google processes personal data. Personalised ads are only shown with your consent, which you can change in the app at any time.</li>
+      <li>You can voluntarily buy leaf packs and the removal of the ad banner in the app. Google Play handles the payment; we do not receive any payment details.</li>
+      <li>Android asks once, when you first start the app, whether it may show notifications; you can turn them on and off in the settings at any time. The app schedules them on your device; no data is transferred for them.</li>
+      <li>If you are signed in to Google Play Games, the app reports the achievements you reach in the game to Google. You can turn this off in the settings.</li>
     </ul>
 
     <h2>3. Data on your device</h2>
-    <p>The app stores on your device: your progress (solved levels, stars, leaves, hint vouchers, garden projects, badges), levels in progress, your settings (for example language, sound, vibration, display) and technical records of voluntarily watched reward videos, so that a reward is only credited once.</p>
-    <p>This data does not leave your device and is not sent to us. It is used solely so that the game works and your progress is kept (Art. 6(1)(b) GDPR; storing it on your device is strictly necessary for this, § 25(2) no. 2 TDDDG).</p>
-    <p>You can delete this data at any time: in the app under Settings → “Delete progress”, or by uninstalling the app.</p>
-    <p><strong>Exporting your progress:</strong> If you use “Export progress”, the app copies your progress as text to your device’s clipboard. What you do with it, for example saving it in a note, is up to you. We do not receive any data.</p>
+    <p>The app stores on your device: your progress (for example solved and skipped levels, stars, leaves, the water in your well, upgrades from the workshop, badges), levels in progress, your settings (for example language, music and sound effects, vibration, display), technical records of voluntarily watched reward videos, so that a reward is only credited once and the limits for reward videos are kept, records of your in-app purchases (see section 5), your choice about notifications (see section 6) and your choice and the reported achievements for Google Play Games (see section 6a).</p>
+    <p>This data is not sent to us. It is used solely so that the game works and your progress is kept (Art. 6(1)(b) GDPR; storing it on your device is strictly necessary for this, § 25(2) no. 2 TDDDG).</p>
+    <p>If you have turned on backup by Google in the Android settings, Android may back up the app’s data to your Google account and restore it after a reinstall or on a new device. This backup is a feature of Android and Google; we have no access to it. You control it in the Android settings.</p>
+    <p>You can delete this data at any time by uninstalling the app or clearing its storage in the Android settings. In the app, Settings → “Delete progress” deletes your progress and your levels in progress; your settings, the records of your purchases (see section 5), your choice about notifications (see section 6) and the Google Play Games information (see section 6a) are kept.</p>
+    <p><strong>Exporting your progress:</strong> If you use “Export progress”, the app copies your progress as text to your device’s clipboard. What you do with it, for example saving it in a note, is up to you. We do not receive any data. The records of your purchases, your choice about notifications and the Google Play Games information are not included in the exported progress.</p>
 
     <h2>4. Advertising with Google AdMob</h2>
     <h3>a) Provider</h3>
     <p>Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (“Google”).</p>
     <h3>b) Where ads appear</h3>
-    <p>A small banner at the bottom of the screen while you are working on a puzzle, and reward videos (for example for extra moves or a hint) that only start when you explicitly choose them. The app shows no ads in the first ten levels, in menus, in the garden, on the level map or on result screens.</p>
+    <p>A small banner at the bottom of the screen while you are working on a puzzle, and reward videos that only start when you explicitly choose them: in a running puzzle (for example for a hint, extra moves or water for your well) and after you have solved a level, to double the leaves you won. The app shows no ads in the introduction, in the first ten levels, in practice puzzles, in menus, in the workshop or on the level map. If you have bought “Remove the ad banner” (see section 5), no banner is shown any more; the voluntary reward videos remain available.</p>
     <h3>c) Data processed by Google</h3>
     <p>According to Google, the Google Mobile Ads SDK automatically collects in particular:</p>
     <ul>
@@ -211,31 +238,51 @@ footer.site { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var
     <p>How long Google stores data is governed by Google’s policies. More information: <a href="https://policies.google.com/privacy">Google’s privacy policy</a>, <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partners’ apps</a> and <a href="https://myadcenter.google.com">your ad settings at Google</a>.</p>
     <p>Rewards from ad videos are credited only locally on your device.</p>
 
-    <h2>5. Download and updates via Google Play</h2>
+    <h2>5. In-app purchases (Google Play Billing)</h2>
+    <h3>a) What you can buy and who handles the purchase</h3>
+    <p>In the app you can voluntarily buy leaf packs (leaves are the game currency, for example for hints and the workshop) and the one-time removal of the ad banner. No level requires a purchase. Google handles the purchase and the payment through Google Play. In doing so, Google processes in particular your Google account, your payment method, billing data and details of the purchase (product, price, time, country) under its own responsibility; in the European Economic Area, the controller is Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland. The <a href="https://play.google.com/about/play-terms/index.html">Google Play Terms of Service</a>, <a href="https://policies.google.com/privacy">Google’s privacy policy</a> and the <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;ldl=en">Google Payments privacy notice</a> apply.</p>
+    <h3>b) What we receive</h3>
+    <p>We do not receive any payment details: no card or account number and no address. In the Google Play Console we see, for each order, the order number, date, product, price, taxes, the device model and the country and, in some cases, the region, postcode or city. We can find an order there by its order number or your full email address, for example when you contact us about a purchase. We use this information to settle purchases, handle refunds, meet tax obligations, help you with questions and detect abuse (Art. 6(1)(b), (c) and (f) GDPR). Accounting records that we take from the Play Console for our bookkeeping are kept for as long as commercial and tax law requires (up to ten years, § 147 AO, § 257 HGB).</p>
+    <h3>c) What the app stores on your device</h3>
+    <p>Google Play tells the app which product you bought, whether the payment is complete, and a purchase identifier. From this, the app stores one local record per purchase: the product, its status, times, for leaf packs the leaves credited, and a fingerprint (hash value) of the purchase identifier, not the identifier itself. This way every purchase is credited exactly once, even if Google Play reports it several times. After crediting a purchase, the app confirms it to Google Play; it reports leaf packs as consumed so that you can buy them again. When the app starts, when you return to it and via “Restore purchases”, the app asks Google Play which purchases belong to your Google account; for example, the ad-free status comes back after a reinstall, and a refunded ad-free status ends. The app also gets the current prices from Google Play. The app sends these records to no one, including us: we do not run any servers of our own and receive no purchase data from the app. The legal basis is providing what you bought in the app (Art. 6(1)(b) GDPR); storing the records on your device is strictly necessary for this (§ 25(2) no. 2 TDDDG). Exporting your progress does not include these records.</p>
+    <h3>d) Transfers to third countries</h3>
+    <p>Google also processes data in the USA; what is said in section 4 g) applies (EU-US Data Privacy Framework, standard contractual clauses).</p>
+
+    <h2>6. Notifications</h2>
+    <p>The app can let you know with notifications, for example when your well has water again, and now and then reminds you of a level that is waiting or of the daily puzzle – at most twice a day and never between 9 pm and 9 am. When you open the app for the first time, Android (from Android 13) asks once for your permission to show notifications: if you allow it, they are on; if you decline, they stay off and the app does not ask again by itself. On older Android versions, which do not ask, they are on from the start. You can turn them on and off at any time in the app under Settings → “Notifications” – when you turn them off, the app deletes all scheduled notifications – or in the app’s Android settings.</p>
+    <p>These are local notifications: the app schedules them itself on your device when you leave it, and Android shows them at the scheduled time; when you open the app again, it deletes the ones still scheduled. There is no push service and no server for this, the app creates no push token, and no data is transferred to us or to third parties. On your device the app stores your choice (on or off, whether Android has asked you yet and when you decided) and the type and time of scheduled and already due notifications, so that they do not appear too often. This information is kept when you delete your progress and is not included in exported progress; it is deleted when you uninstall the app. The legal basis is providing this feature of the app, which you can turn off at any time (Art. 6(1)(b) GDPR); storing the information on your device is strictly necessary for this (§ 25(2) no. 2 TDDDG).</p>
+
+    <h2>6a. Achievements with Google Play Games</h2>
+    <p>The app can report the achievements you reach in the game to Google Play Games, Google’s games service (provider: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland). This only happens while you are signed in to Google Play Games and “Share achievements with Google Play” is on in the settings. If you have a Google Play Games profile, Google signs you in by itself when the app starts; without a profile the app does not ask by itself – you can sign in on the goals screen with “Google Play achievements”.</p>
+    <p>What is reported: which achievements you have reached and, for achievements with progress, how far you are (for example “37 of 50 levels solved”). Google links this to your player profile (player name, avatar, player ID) and also processes technical information such as your IP address and device and diagnostic data, under its own responsibility and Google’s privacy policy (<a href="https://policies.google.com/privacy">policies.google.com/privacy</a>). Who can see your achievements is set in your Google Play Games profile. We do not receive this data.</p>
+    <p>On your device the app stores your choice, which achievements Google has already confirmed and a checksum of your player ID (not the ID itself), so that it sends nothing twice, catches up at the next start on what it could not send offline, and notices when another account is signed in. This information is kept when you delete your progress and is not included in exported progress; it is deleted when you uninstall the app.</p>
+    <p>If you turn “Share achievements with Google Play” off, the app sends nothing more and no longer starts Google Play Games from the next app start. You manage and delete your profile and the achievements stored there with Google, in the Google Play Games settings on your device or at <a href="https://myaccount.google.com">myaccount.google.com</a>. The legal basis is providing this voluntary feature (Art. 6(1)(b) GDPR); storing the information on your device is strictly necessary for this (§ 25(2) no. 2 TDDDG). For transfers to third countries, what is said in section 4 g) applies.</p>
+
+    <h2>7. Download and updates via Google Play</h2>
     <p>When you download the app from Google Play, Google processes data such as your Google account and details about your device under its own responsibility; Google’s privacy policy applies. Google provides us as the developer with aggregated statistics (for example the number of installs) as well as crash and stability reports, if you have agreed on your device to share usage and diagnostics data. We use this information only to fix errors and improve the app (Art. 6(1)(f) GDPR).</p>
 
-    <h2>6. App permissions</h2>
-    <p>The app only uses internet access and the network state (to load ads), the advertising ID and the advertising interfaces of the Android Privacy Sandbox (for ads, see section 4), keeping the screen awake (so that ad videos are not interrupted), the audio settings (for music and sound effects) and vibration (for haptic feedback, which you can switch off in the settings). It does not access your location (GPS), camera, microphone, contacts or files.</p>
+    <h2>8. App permissions</h2>
+    <p>The app only uses internet access and the network state (to load ads), the advertising ID and the advertising interfaces of the Android Privacy Sandbox (for ads, see section 4), the Google Play billing permission (for in-app purchases, see section 5), the permission to show notifications and the notice that the device has restarted, so that scheduled notifications are kept after a restart (for notifications, see section 6; from Android 13, Android asks once for permission to show them when you first start the app), keeping the screen awake (so that ad videos are not interrupted), the audio settings (for music and sound effects) and vibration (for haptic feedback, which you can switch off in the settings). It does not access your location (GPS), camera, microphone, contacts or files.</p>
 
-    <h2>7. This website</h2>
+    <h2>9. This website</h2>
     <p>This website is provided via GitHub Pages, a service of GitHub (GitHub B.V., Prins Bernhardplein 200, 1097 JB Amsterdam, the Netherlands, and GitHub, Inc., 88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA). When you open the pages, GitHub processes technically necessary data, in particular your IP address, the date and time of the request and details about your browser, to deliver the pages and protect the service (Art. 6(1)(f) GDPR; our legitimate interest is providing the pages securely and reliably). Data may be transferred to the USA; GitHub is certified under the EU-U.S. Data Privacy Framework. More in <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>.</p>
     <p>The website sets no cookies, loads no fonts or scripts from other servers and uses no analytics or advertising services.</p>
 
-    <h2>8. Contact</h2>
+    <h2>10. Contact</h2>
     <p>If you write to us by email or through our contact form, we process your details (name, email address and message) to answer your request (Art. 6(1)(b) or (f) GDPR). We delete this data once your request has been dealt with, unless statutory retention obligations apply.</p>
     <p>The <a href="https://tally.so/r/PdKWxe">contact form</a> is provided by Tally (Tally BV, Sint-Pietersnieuwstraat 11, 9000 Gent, Belgium). Tally processes the details on our behalf on servers in the EU; a data processing agreement with Tally is in place (Art. 28 GDPR). The form opens on Tally’s website, where <a href="https://tally.so/help/privacy-policy">Tally’s privacy policy</a> also applies.</p>
 
-    <h2>9. Children</h2>
-    <p>Bloom Circuit is intended for people aged 16 and over. If you are younger, please ask your parents before you consent to personalised ads.</p>
+    <h2>11. Children</h2>
+    <p>Bloom Circuit is intended for people aged 16 and over. If you are younger, please ask your parents before you consent to personalised ads or buy something in the app.</p>
 
-    <h2>10. Your rights</h2>
-    <p>You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object to processing based on legitimate interests (Art. 21). You can withdraw consent at any time with effect for the future (Art. 7(3)). Since we do not store personal data from the app on servers of our own, requests about advertising data are mainly directed to Google; we are happy to help you with them.</p>
+    <h2>12. Your rights</h2>
+    <p>You have the right of access (Art. 15 GDPR), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and to object to processing based on legitimate interests (Art. 21). You can withdraw consent at any time with effect for the future (Art. 7(3)). Since we do not store personal data from the app on servers of our own, requests about advertising, payment and game data (Google Play Games) are mainly directed to Google; we are happy to help you with them.</p>
     <p>You also have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR), for example the authority responsible for us: the State Commissioner for Data Protection and Freedom of Information of Rhineland-Palatinate (Der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz), Hintere Bleiche 34, 55116 Mainz, Germany (<a href="https://www.datenschutz.rlp.de">www.datenschutz.rlp.de</a>).</p>
 
-    <h2>11. No automated decisions</h2>
+    <h2>13. No automated decisions</h2>
     <p>We do not make automated decisions that produce legal effects concerning you or similarly significantly affect you (Art. 22 GDPR).</p>
 
-    <h2>12. Changes</h2>
+    <h2>14. Changes</h2>
     <p>We update this privacy policy when the app or the legal situation changes. The version published here applies.</p>
   </article>
 </main>
