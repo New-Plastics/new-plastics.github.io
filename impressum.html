@@ -3,8 +3,9 @@
      (Wunsch des Nutzers, 28.10.2026). Der Text steht in D:\Claude_Code\Garden_Game\bloom-circuit\docs\legal\impressum.html,
      weil die App Bloom Circuit ihn wortgleich zeigt (src/config/legal.ts, Test tests/unit/imprint.test.tsx). seiten_bauen.py
      setzt dessen zwei Artikel in main ein und ersetzt die E-Mail-Adresse durch den Knopf, der sie erst beim
-     Antippen zusammensetzt. Kommt ein Spiel dazu: seine Datenschutzerklärung in die Fußzeile. -->
-<html lang="de">
+     Antippen zusammensetzt. Kommt ein Spiel dazu: seine Datenschutzerklärung in die Fußzeile.
+     Sprachschalter DE | EN: seiten_bauen.py gibt den Artikeln data-lang, Menü und Fußzeile stehen zweisprachig. -->
+<html lang="de" data-titel-en="New Plastics – Legal notice">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,19 +46,73 @@ address { font-style: normal; }
 footer.site { max-width: 820px; margin: 0 auto; padding: 0 16px 40px; color: var(--soft); font-size: 0.9rem; }
 button.mail { background: none; border: 0; padding: 0; font: inherit; color: var(--accent); text-decoration: underline; cursor: pointer; }
 </style>
+<script>
+(function () {
+  var h = document.documentElement;
+  function setze(s) {
+    h.setAttribute('data-sprache', s);
+    h.setAttribute('lang', s);
+    document.title = h.getAttribute(s === 'en' ? 'data-titel-en' : 'data-titel-de') || document.title;
+    var k = document.querySelectorAll('.sprache button');
+    for (var i = 0; i < k.length; i++) k[i].setAttribute('aria-pressed', k[i].getAttribute('data-wahl') === s ? 'true' : 'false');
+    var a = document.querySelectorAll('[data-aria-en]');
+    for (var j = 0; j < a.length; j++) a[j].setAttribute('aria-label', a[j].getAttribute(s === 'en' ? 'data-aria-en' : 'data-aria-de'));
+  }
+  var s = null;
+  try { s = localStorage.getItem('np-sprache'); } catch (e) {}
+  if (s !== 'de' && s !== 'en') s = String(navigator.language || '').toLowerCase().indexOf('de') === 0 ? 'de' : 'en';
+  h.setAttribute('data-titel-de', document.title);
+  setze(s);
+  document.addEventListener('DOMContentLoaded', function () { setze(h.getAttribute('data-sprache')); });
+  function neu() {
+    var t = null;
+    try { t = localStorage.getItem('np-sprache'); } catch (x) {}
+    if ((t === 'de' || t === 'en') && t !== h.getAttribute('data-sprache')) setze(t);
+  }
+  window.addEventListener('pageshow', function (e) { if (e.persisted) neu(); });
+  window.addEventListener('storage', function (e) { if (e.key === 'np-sprache') neu(); });
+  document.addEventListener('click', function (e) {
+    var b = e.target && e.target.closest ? e.target.closest('.sprache button') : null;
+    if (!b) return;
+    var w = b.getAttribute('data-wahl');
+    try { localStorage.setItem('np-sprache', w); } catch (e2) {}
+    setze(w);
+  });
+})();
+</script>
+<style>
+/* Sprachschalter: nur die gewählte Sprache zeigen; ohne JavaScript (kein data-sprache) bleiben beide sichtbar */
+html[data-sprache="de"] [data-lang="en"], html[data-sprache="en"] [data-lang="de"] { display: none !important; }
+html:not([data-sprache]) .sprache { display: none; }
+/* Ohne JavaScript stehen kurze Paare (Menü, Knöpfe) nebeneinander: "Alle Spiele / All games" statt "Alle SpieleAll games" */
+html:not([data-sprache]) span[data-lang="en"]::before { content: " / "; }
+.sprache { display: flex; align-items: center; gap: 2px; }
+.sprache button { background: none; border: 0; padding: 6px 9px; min-height: 36px; border-radius: 999px; font: inherit; font-size: 0.85rem; font-weight: 700; letter-spacing: 0.04em; color: var(--soft); cursor: pointer; }
+.sprache button:hover { color: var(--text); }
+.sprache button[aria-pressed="true"] { background: var(--line); color: var(--accent); }
+.sprache .trenner { color: var(--soft); opacity: 0.6; }
+/* Schmal: Name und Schalter in der ersten Zeile, das Menü darunter */
+@media (max-width: 820px) {
+  .sprache { order: 2; margin-left: auto; }
+  nav.menu { order: 3; flex-basis: 100%; justify-content: flex-end; margin-left: 0; }
+  /* Ein langer Name (99 Millionen Blöcke) bricht neben dem Schalter um, statt ihn in eine eigene Zeile zu schieben */
+  html[data-sprache] .brand { max-width: calc(100% - 96px); }
+}
+</style>
 </head>
 <body>
 <header class="site">
   <div class="inner">
     <a class="brand" href="index.html">New Plastics</a>
-    <nav class="menu" aria-label="Menü">
-      <a href="index.html">Alle Spiele</a>
-      <a href="impressum.html" aria-current="page">Impressum</a>
+    <nav class="menu" aria-label="Menü" data-aria-de="Menü" data-aria-en="Menu">
+      <a href="index.html"><span data-lang="de">Alle Spiele</span><span data-lang="en">All games</span></a>
+      <a href="impressum.html" aria-current="page"><span data-lang="de">Impressum</span><span data-lang="en">Legal notice</span></a>
     </nav>
+    <div class="sprache" role="group" aria-label="Sprache / Language"><button type="button" data-wahl="de" aria-pressed="true">DE</button><span class="trenner" aria-hidden="true">|</span><button type="button" data-wahl="en" aria-pressed="false">EN</button></div>
   </div>
 </header>
 <main>
-  <article lang="de">
+  <article lang="de" data-lang="de">
     <h1>Impressum</h1>
     <h2>Angaben gemäß § 5 DDG</h2>
     <address>
@@ -78,7 +133,7 @@ button.mail { background: none; border: 0; padding: 0; font: inherit; color: var
     <p>Informationen zum Umgang mit Daten findest du in der Datenschutzerklärung des jeweiligen Spiels.</p>
   </article>
 
-  <article lang="en">
+  <article lang="en" data-lang="en">
     <h1>Legal notice</h1>
     <address>
       Marvin Jüssen<br>
@@ -91,9 +146,10 @@ button.mail { background: none; border: 0; padding: 0; font: inherit; color: var
     Contact form: <a href="https://tally.so/r/PdKWxe">tally.so/r/PdKWxe</a><br>
     VAT ID: DE370174058</p>
     <p>We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.</p>
+    <p>You can find information on how we handle data in the privacy policy of each game.</p>
   </article>
 </main>
-<footer class="site">© 2026 Marvin Jüssen, New Plastics · <a href="index.html">Alle Spiele</a> · Datenschutz: <a href="datenschutz.html">Bloom Circuit</a>, <a href="millionen-bloecke-datenschutz.html">99 Millionen Blöcke</a></footer>
+<footer class="site">© 2026 Marvin Jüssen, New Plastics · <a href="index.html"><span data-lang="de">Alle Spiele</span><span data-lang="en">All games</span></a> · <span data-lang="de">Datenschutz:</span><span data-lang="en">Privacy:</span> <a href="datenschutz.html">Bloom Circuit</a>, <a href="millionen-bloecke-datenschutz.html"><span data-lang="de">99 Millionen Blöcke</span><span data-lang="en">99 Million Blocks</span></a></footer>
 <script>
 // Die E-Mail-Adresse steht nicht im Seitentext: Sie wird erst zusammengesetzt, wenn ein Mensch auf den Knopf tippt
 // (Schutz vor Adress-Sammlern und KI-Crawlern, 28.10.2026).
