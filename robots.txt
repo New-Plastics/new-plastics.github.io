@@ -1,0 +1,37 @@
+# new-plastics.github.io: KI-Crawler und Datensammler dürfen die Seiten nicht auslesen.
+# Suchmaschinen (Googlebot) und Googles Prüfungen für Google Play und AdMob (app-ads.txt) bleiben erlaubt.
+# Quelle: D:\Claude_Code\Ball game\Rechtstexte\robots.txt (seiten_bauen.py kopiert sie in die Website).
+
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Claude-Web
+User-agent: anthropic-ai
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Bytespider
+User-agent: Amazonbot
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: FacebookBot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: Diffbot
+User-agent: Omgilibot
+User-agent: ImagesiftBot
+User-agent: YouBot
+User-agent: Timpibot
+User-agent: AI2Bot
+User-agent: DataForSeoBot
+User-agent: MistralAI-User
+User-agent: DuckAssistBot
+Disallow: /
+
+User-agent: *
+Allow: /
